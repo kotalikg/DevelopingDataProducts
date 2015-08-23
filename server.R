@@ -8,6 +8,3 @@ shinyServer(function(input, output) {
       output$inputValue = renderPrint({input$cyl})
       output$prediction = renderPrint({mpg(input$cyl)})
 })
-
-
-mpg(4)
